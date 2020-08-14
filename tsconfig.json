@@ -1,0 +1,21 @@
+{
+	"compilerOptions": {
+		"target": "esnext",
+		"module": "commonjs",
+		"allowJs": false,
+		"sourceMap": true,
+		"outDir": "dist",
+		"isolatedModules": true,
+		"strict": true,
+		"moduleResolution": "node",
+		"resolveJsonModule": true,
+		"baseUrl": ".",
+		"paths": { "~/*": [".src/*"] },
+		"allowSyntheticDefaultImports": true,
+		"esModuleInterop": true,
+		"experimentalDecorators": true,
+		"emitDecoratorMetadata": true,
+		"forceConsistentCasingInFileNames": true
+	},
+	"include": ["src"]
+}

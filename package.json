@@ -1,0 +1,34 @@
+{
+	"name": "sitescan",
+	"version": "1.0.0",
+	"description": "",
+	"author": "Jesse Tessmer <jesse.tessmer@gmail.com>",
+	"license": "UNLICENSED",
+	"main": "dist/index.js",
+	"bin": {
+		"sitescan": "dist/index.js"
+	},
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"build": "rimraf ./dist/* && npx swc ./src -d ./dist",
+		"dev": "chokidar \"./src/**/*.ts\" -c \"npm run build\"",
+		"run": "node ./dist/index.js"
+	},
+	"devDependencies": {
+		"@swc/cli": "^0.1.26",
+		"@swc/core": "^1.2.18",
+		"@types/node": "^14.0.27",
+		"@typescript-eslint/eslint-plugin": "^3.9.0",
+		"@typescript-eslint/parser": "^3.9.0",
+		"chokidar-cli": "^2.1.0",
+		"chrome-launcher": "^0.13.4",
+		"eslint": "^7.6.0",
+		"prettier": "^2.0.5",
+		"rimraf": "^3.0.2",
+		"typescript": "^3.9.7"
+	},
+	"dependencies": {
+		"lighthouse": "^6.2.0",
+		"regenerator-runtime": "^0.13.7"
+	}
+}
